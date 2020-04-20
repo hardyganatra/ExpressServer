@@ -1,0 +1,24 @@
+**********************************************************************
+ Tech Stack Used >>>
+
+*** Low Level request handling >> HTTP module handle http request
+*** Routing Server logic >> 
+  1) Express >> parse response + Routing
+  2) Morgan  >> Logging
+  3) BodyParser >> help parse incoming http request
+*** DataBase >> 
+  1) Mongoose >> Working with MongoDB
+  2) MongoDB  >> Storing DataBase
+*** Authentication
+  1) Passport JS >> Authenticating Users
+  2) Passport-Local >> Authenticating Users with username/pw
+  3) Passport-JWT >> Authenticating Users with JWT
+  4) Bcrypt-Node js >> Storing a users password safely
+
+**********************************************************************
+Note-Knowledge
+
+Mongoose helps us intrracting with DB;
+use to create Datamodel that represents The user
+
+
