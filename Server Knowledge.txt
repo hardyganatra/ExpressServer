@@ -13,7 +13,7 @@
   1) Passport JS >> Authenticating Users
   2) Passport-Local >> Authenticating Users with username/pw
   3) Passport-JWT >> Authenticating Users with JWT
-  4) Bcrypt-Node js >> Storing a users password safely
+  4) Bcryptjs >> Storing a users password safely
 
 **********************************************************************
 Note-Knowledge
