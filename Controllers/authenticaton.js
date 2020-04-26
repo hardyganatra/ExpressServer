@@ -15,7 +15,7 @@ function tookenforuser(user) {
 
 exports.signin = function (req, res, next) {
 	//user has allready had their email and password authorized by local strategy we just need to give them a token
-	console.log("chexk", req);
+	//console.log("chexk", req);
 	res.json({ token: tookenforuser(req.user) });
 	//res.send({ hi: "there1234566" });
 };
