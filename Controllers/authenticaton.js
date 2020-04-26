@@ -3,9 +3,22 @@ const jwt = require("jwt-simple");
 const config = require("../config");
 
 function tookenforuser(user) {
+	//console.log("chexk", user);
 	const timestamp = new Date().getTime;
 	return jwt.encode({ sub: user.id, iat: timestamp }, config.secret);
 }
+
+// exports.signin = functon(req, res, next){
+//     //user has allready had their email and password authorized by local strategy we just need to give them a token
+//     res.send({token : tookenforuser(req.user)})
+// }
+
+exports.signin = function (req, res, next) {
+	//user has allready had their email and password authorized by local strategy we just need to give them a token
+	console.log("chexk", req);
+	res.json({ token: tookenforuser(req.user) });
+	//res.send({ hi: "there1234566" });
+};
 
 exports.signup = function (req, res, next) {
 	const email = req.body.email;
