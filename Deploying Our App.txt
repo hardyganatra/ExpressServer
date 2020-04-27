@@ -1,0 +1,25 @@
+Deploying Our App
+
+1) Dynamic Port Binding
+Heroku will tell us which port our app will listen to , so we need to make sure
+we listen to port they tell us to
+
+2) Tell Heroku What version of Node we wanted to use in package.json
+
+"engines": {
+		"node": "10.16.1",
+		"npm": "6.9.0"
+	},
+
+3)  Specify start script >> Tell Herku what command to run to start our server running
+
+
+4)Add .gitignore node_modules 
+
+
+
+
+
+
+
+
